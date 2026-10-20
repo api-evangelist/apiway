@@ -1,0 +1,22 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://apiway.ai/docs/getting-started/sign-up
+sources:
+- https://apiway.ai/docs/getting-started/sign-up
+- https://apiway.ai/presentation-templates/company/marketing-agency
+- https://apiway.ai/docs/getting-started/what-is-apiway
+- https://apiway.ai/docs/getting-started/what-is-apiway.md
+schemes:
+- type: oauth2
+  name: Google OAuth
+  evidence: Apiway accepts Google OAuth and email + password (with one-time-code email verification on registration).
+  flows:
+  - authorization_code
+  authorize_url: https://apiway.ai/login?provider=google
+  how_to_obtain: Select Google OAuth on the login page and follow the provider's consent flow.
+- type: http-bearer
+  name: Supabase JWT
+  evidence: Auth uses Supabase Auth (cookies + JWT).
+  how_to_obtain: After successful login (via Google OAuth or email/password), a JWT is set in a cookie and can be used as a Bearer token.
+docs: https://apiway.ai/docs/getting-started/sign-up

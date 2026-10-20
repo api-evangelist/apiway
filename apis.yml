@@ -1,23 +1,99 @@
 aid: apiway
+
 name: Apiway
-description: 'Apiway is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://apiway.ai/opengraph-image?ee7c37b661a27a0e
+
+description: 'Apiway provides an all‑in‑one AI‑powered workspace that enables businesses to build, automate, and scale applications without code. Users can create AI‑driven apps, automate lead capture, generate marketing content, design visuals, and manage workflows all within a unified platform. The service integrates with popular tools like Google Sheets, Telegram, and Stripe, offering templates for email marketing, social media, e‑commerce, and more. Apiway aims to accelerate digital transformation by letting teams prototype and launch AI‑enhanced solutions quickly, with a focus on ease of use and collaborative editing.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apiway/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- AI
+- Workspace
+- Automation
+- No-code
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/apiway-plans-pricing.yml
+- type: ChangeLog
+  url: changelog/apiway-changelog.yml
+- type: Authentication
+  url: authentication/apiway-authentication.yml
+- type: LLMsTxt
+  url: llms/apiway-llms.txt
+- type: WellKnown
+  url: well-known/apiway-well-known.yml
+- type: Hosts
+  url: hosts/apiway-hosts.yml
+- type: Vendors
+  url: vendors/apiway-vendors.yml
+- type: DomainSecurity
+  url: security/apiway-domain-security.yml
 - type: Website
   url: https://apiway.ai/
+- type: DeveloperPortal
+  url: https://apiway.ai/
+- type: Documentation
+  url: https://apiway.ai/docs
+- type: APIReference
+  url: https://apiway.ai/docs
+- type: GettingStarted
+  url: https://apiway.ai/docs#getting-started
+- type: Support
+  url: https://apiway.ai/contact
+- type: Blog
+  url: https://apiway.ai/blog
+- type: Pricing
+  url: https://apiway.ai/pricing
+- type: SignUp
+  url: https://apiway.ai/login?mode=register
+- type: TermsOfService
+  url: https://apiway.ai/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://apiway.ai/legal/privacy-policy
+- type: Postman
+  url: https://www.postman.com/apiway/workspace
+
+apis: []
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company serves an API surface but requires credentials before any description of it can be read
+  evidence:
+  - url: https://apiway.ai/api/mcp
+    status: 401
+  - url: https://apiway.ai/
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 15
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

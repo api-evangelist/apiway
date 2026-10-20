@@ -1,0 +1,39 @@
+generated: '2026-10-20'
+method: probed
+source: https://apiway.ai/legal
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://apiway.ai/legal/privacy-policy
+        http_status: 200
+        fetched: null
+        quote: "You can access, correct, export or delete your data and object to or opt out of certain processing wherever you live (§9)."
+    note: Provides data subject rights for access, correction, export, deletion and objection.
+  subprocessors:
+    evidence:
+      - source: https://apiway.ai/legal/subprocessors
+        http_status: 200
+        fetched: null
+        quote: "Each one is bound by a written contract with data protection obligations, and we remain responsible for its work as set out in the Data Processing Addendum (§7)."
+    note: Lists sub‑processors with contractual safeguards and retains responsibility.
+  data_retention:
+    evidence:
+      - source: https://apiway.ai/legal/privacy-policy
+        http_status: 200
+        fetched: null
+        quote: "Where this version gives you more protection or more choices than the previous one (for example cookie consent, the retention limits in §7 and the rights in §9)."
+    note: Mentions retention limits in section 7.
+  ai_transparency:
+    evidence:
+      - source: https://apiway.ai/legal/privacy-policy
+        http_status: 200
+        fetched: null
+        quote: "Never used for advertising, is never sold and is never used to train generalized AI models."
+    note: States AI services are not used to train models.
+  data_residency:
+    evidence:
+      - source: https://apiway.ai/legal/privacy-policy
+        http_status: 200
+        fetched: null
+        quote: "We provide the Service to users worldwide, including in the EEA, the UK and California."
+    note: Indicates service availability and data handling across regions.

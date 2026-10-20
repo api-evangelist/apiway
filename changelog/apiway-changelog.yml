@@ -1,0 +1,54 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://apiway.ai/changelog
+sources:
+- https://apiway.ai/changelog
+- https://apiway.ai/feeds/changelog.atom
+entries:
+- breaking: false
+  highlights:
+  - A shared copy-an-app page now tells the agent to connect at apiway.ai/api/mcp.
+  date: '2026-10-20'
+- breaking: false
+  highlights:
+  - An app built in App Factory can now turn one of its pictures into a 5 or 10 second clip on Kling 3 — for example a 360° orbit of a product
+    on a podium — with `apiway.ai.video`, paid from the owner's credits like the other AI calls.
+  date: '2026-10-20'
+- breaking: false
+  highlights:
+  - In the AI Simulator, a typed question in the middle of a chapter brings the step buttons back.
+  date: '2026-10-19'
+- breaking: false
+  highlights:
+  - Chapter 2 of the AI Simulator now walks ChatGPT, Claude, Cursor, Codex and Claude Code each with their own MCP connection steps, says which
+    of your agents is already connected, and opens every picture and GIF full screen.
+  date: '2026-10-19'
+- breaking: false
+  highlights:
+  - While the AI trainer is on, Apiway gets a thin pink frame with the step number and «Back to the agent», and everything opens in one Apiway
+    tab next to the trainer.
+  date: '2026-10-18'
+- breaking: false
+  highlights:
+  - The AI trainer at /app/simulator is now one chat window.
+  date: '2026-10-17'
+- breaking: false
+  highlights:
+  - Apiway Basic includes the AI trainer.
+  date: '2026-10-16'
+- breaking: false
+  highlights:
+  - A person you invite to your workspace now opens your Email Marketing (campaigns, lists, contacts, brands, sending) and your Instagram Comment
+    → DM automations, in Apiway and through the Apiway MCP connector.
+  date: '2026-10-14'
+- breaking: false
+  highlights:
+  - SMM AI now finds the pictures, GIFs and videos on the news source page and puts them on the story slides as a large card above the text.
+  date: '2026-10-14'
+- breaking: false
+  highlights:
+  - 'Email Marketing: Modern Black & White and Editorial ready-made letters.'
+  date: '2026-10-12'
+note: The changelog page does not specify a versioning scheme or a current version number; entries are dated only.
+docs: https://apiway.ai/changelog

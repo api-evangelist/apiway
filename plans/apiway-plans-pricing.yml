@@ -1,0 +1,42 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://apiway.ai/pricing
+sources:
+- https://apiway.ai/pricing
+- https://apiway.ai/docs/app-factory/pricing-and-credits
+- https://apiway.ai/docs/app-factory/pricing-and-credits.md
+- https://apiway.ai/llms/pricing.txt
+name: Apiway pricing
+audience: business-product
+pricing_basis: tiered-subscription
+plans:
+- name: Free
+  price_text: $0
+  price: 0
+  description: 100 one-time credits, no monthly refill
+- name: Starter
+  price_text: $19.99/mo
+  price: 19.99
+  description: 2,000 monthly credits, up to 10 workspace members
+- name: Basic
+  price_text: $29.99/mo
+  price: 29.99
+  description: 3,000 monthly credits, up to 10 workspace members
+- name: Pro
+  price_text: $59.99/mo
+  price: 59.99
+  description: 6,000 monthly credits, up to 10 workspace members
+- name: Studio
+  price_text: $139.99/mo
+  price: 139.99
+  description: 14,000 monthly credits, up to 10 workspace members
+- name: Business
+  price_text: $379.99/mo
+  price: 379.99
+  description: 38,000 monthly credits, up to 10 workspace members
+- name: Scale
+  price_text: $799.99/mo
+  price: 799.99
+  description: 80,000 monthly credits, up to 10 workspace members
+docs: https://apiway.ai/pricing
